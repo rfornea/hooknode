@@ -31,7 +31,11 @@ class NodeMessenger
         }
     }
 
+<<<<<<< HEAD
     public function sendMessageToNode($commandObject, $nodeUrl)
+=======
+    public function sendMessageToNode($nodeUrl, $commandObject)
+>>>>>>> 4aba6e79cf1c908dfb854c83651b384e9a18c4b6
     {
 
         try {

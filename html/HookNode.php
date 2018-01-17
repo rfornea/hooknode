@@ -52,12 +52,12 @@ class HookNode
 
         $command = new stdClass();
         $command->command = "attachToTangle";
+
         $command->minWeightMagnitude = IriData::$minWeightMagnitude;
+
         $command->trunkTransaction = $transactionObject->trunkTransaction;
         $command->branchTransaction = $transactionObject->branchTransaction;
         $command->trytes = $transactionObject->trytes;
-
-        var_dump($command);
 
         $resultOfAttach = $req->makeRequest($command);
 

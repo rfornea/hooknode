@@ -22,6 +22,7 @@ class IriWrapper
             $this->validateUrl(IriData::$nodeUrl);
             array_push($this->headers, $this->apiVersionHeaderString . IriData::$apiVersion);
             $this->nodeUrl = IriData::$nodeUrl;
+
         } catch (Exception $e) {
             echo 'Caught exception: ' . $e->getMessage() . $GLOBALS['nl'];
         }
